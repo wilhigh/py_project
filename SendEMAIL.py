@@ -24,3 +24,4 @@ except Exception:
     print('Error: unable to send email.')
 finally:
     s.close()
+
