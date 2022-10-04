@@ -1,4 +1,5 @@
 
+from pydoc import classify_class_attrs
 import requests 
 from bs4 import BeautifulSoup
 import pandas as pd 
@@ -18,7 +19,7 @@ for i in range(0,len(price_list),5):
 close_list
 
 amount_list = []
-for i in range(0,len(price_list),5):
+for i in range(4,len(price_list),5):
     amount_list.append(price_list[i])
 amount_list
 df = pd.DataFrame({'date':date_list, 'close':close_list, 'amount':amount_list})
